@@ -1,9 +1,10 @@
-Django==4.1
+Django==4.1.1
 #django-cities-light==3.9.2
+django-cors-headers==3.13.0
 django-environ==0.9.0
 django-filter==22.1
 # django-modeltranslation==0.18.4
-django-phac_aspc-helpers @ file:///home/belliveaul/Documents/repos/phac/django/django-phac_aspc-helpers/dist/django-phac_aspc-helpers-0.1.tar.gz
+django-phac_aspc-helpers @ https://github.com/PHACDataHub/django-phac_aspc-helpers/archive/main.zip
 #graphene-django==3.0.0
-strawberry-graphql==0.133.5
+strawberry-graphql==0.132.1
 strawberry-django-auth==0.3.6.0
