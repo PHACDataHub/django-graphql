@@ -1,0 +1,9 @@
+Django==4.1
+#django-cities-light==3.9.2
+django-environ==0.9.0
+django-filter==22.1
+# django-modeltranslation==0.18.4
+django-phac_aspc-helpers @ file:///home/belliveaul/Documents/repos/phac/django/django-phac_aspc-helpers/dist/django-phac_aspc-helpers-0.1.tar.gz
+#graphene-django==3.0.0
+strawberry-graphql==0.133.5
+strawberry-django-auth==0.3.6.0

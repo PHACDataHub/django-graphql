@@ -1,4 +1,4 @@
-"""cira URL Configuration
+"""phac_base URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/4.1/topics/http/urls/
@@ -18,9 +18,12 @@ from django.urls import path
 from django.views.decorators.csrf import csrf_exempt
 from django.conf.urls.i18n import i18n_patterns
 
-from graphene_django.views import GraphQLView
+from strawberry.django.views import AsyncGraphQLView
+from .schema import schema
+
+# from graphene_django.views import GraphQLView
 
 urlpatterns = i18n_patterns(
     path("admin/", admin.site.urls),
-    path("graphql", csrf_exempt(GraphQLView.as_view(graphiql=True))),
+    path("graphql", csrf_exempt(AsyncGraphQLView.as_view(schema=schema))),
 )
